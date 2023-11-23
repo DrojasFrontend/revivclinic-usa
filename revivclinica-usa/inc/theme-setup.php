@@ -1,22 +1,5 @@
 <?php
   function site_setup() {
-    add_theme_support('post-thumbnails');
-    add_theme_support('custom-logo',
-      array(
-        'width' => 156,
-        'height' => 50,
-        'flex-width' => true,
-        'flex-height' => true
-      )
-    );
-
-    register_nav_menus(
-      array(
-        'menu-principal' => 'Menu Principal',
-        'menu-footer' => 'Menu Footer'
-      )
-    );
-
     // Enable SVG file uploads
     function mytheme_allow_svg_upload($mimes) {
       $mimes['svg'] = 'image/svg+xml';
@@ -32,25 +15,28 @@
     }
     add_action('wp_default_scripts', 'mytheme_remove_jquery_migrate');
 
-    function my_deregister_jquery() {
-      if (!is_admin()) {
-          wp_deregister_script('jquery');
-      }
-    }
-    add_action('wp_enqueue_scripts', 'my_deregister_jquery');
+    function deregister_qjuery () {
+      if (! is_admin ()) {wp_deregister_script ('jquery'); 
+    }} 
+    add_action ('wp_enqueue_scripts', 'deregister_qjuery');
 
-    function enqueue_scripts_with_jquery_cdn() {
-      // Desregistra la versión integrada de jQuery
-      wp_deregister_script('jquery');
-  
-      // Registra y encola jQuery desde el CDN de Google
-      wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js', array(), null, true);
-      wp_enqueue_script('jquery');
-  }
-  
-  // Añade la acción para cargar los scripts con jQuery desde el CDN
-  add_action('wp_enqueue_scripts', 'enqueue_scripts_with_jquery_cdn');
-  
+    function stop_heartbeat () {
+      wp_deregister_script ('latido'); 
+    }
+    add_action ('init', 'stop_heartbeat', 1); 
+
+    function remove_block_library() {
+      wp_deregister_style('wp-block-library'); 
+    } 
+    add_action('wp_enqueue_scripts', 'remove_block_library');
+
+    remove_action ('wp_head', 'rsd_link');
+    remove_action ('wp_head', 'print_emoji_detection_script', 7); 
+    remove_action ('wp_print_styles', 'print_emoji_styles'); 
+    remove_action ('admin_print_scripts', 'print_emoji_detection_script'); 
+    remove_action ('admin_print_styles', 'print_emoji_styles');
+    remove_action ('wp_head', 'wp_shortlink_wp_head', 10, 0);
+    remove_action ('wp_head', 'wp_generator');
   }
 
   add_action('after_setup_theme', 'site_setup');
