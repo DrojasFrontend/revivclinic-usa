@@ -20,9 +20,59 @@
             "endpoint": 0
         },
         {
+            "key": "field_655effd0b928c",
+            "label": "Fondo Escritorio",
+            "name": "hero_bckg",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "thumbnail"
+        },
+        {
+            "key": "field_655f5aeeb0fbb",
+            "label": "Fondo Mobile",
+            "name": "hero_bckg_mobile",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "thumbnail"
+        },
+        {
             "key": "field_655ec1108e30f",
             "label": "Titulo",
-            "name": "title",
+            "name": "hero_title",
             "aria-label": "",
             "type": "wysiwyg",
             "instructions": "",
@@ -33,7 +83,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "Unlocking The Healing Potential: Transforming Lives with Stem Cells",
+            "default_value": "",
             "tabs": "all",
             "toolbar": "full",
             "media_upload": 1,
@@ -42,7 +92,7 @@
         {
             "key": "field_655ec145bc439",
             "label": "Descripción",
-            "name": "copy",
+            "name": "hero_copy",
             "aria-label": "",
             "type": "wysiwyg",
             "instructions": "",
@@ -53,7 +103,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "Exploring Revolutionary Medical Breakthroughs",
+            "default_value": "",
             "tabs": "all",
             "toolbar": "full",
             "media_upload": 1,
@@ -62,7 +112,7 @@
         {
             "key": "field_655ec2a906ec7",
             "label": "CTA Icono",
-            "name": "cta_icon",
+            "name": "hero_cta_icon",
             "aria-label": "",
             "type": "image",
             "instructions": "",
@@ -87,7 +137,7 @@
         {
             "key": "field_655ec160bc43a",
             "label": "CTA Texto",
-            "name": "cta_text",
+            "name": "hero_cta_text",
             "aria-label": "",
             "type": "text",
             "instructions": "",
@@ -107,7 +157,7 @@
         {
             "key": "field_655ec17fbc43b",
             "label": "CTA Link",
-            "name": "cta_link",
+            "name": "hero_cta_link",
             "aria-label": "",
             "type": "text",
             "instructions": "",
@@ -127,7 +177,7 @@
         {
             "key": "field_655ec193bc43c",
             "label": "Estilo CTA",
-            "name": "cta_style",
+            "name": "hero_cta_style",
             "aria-label": "",
             "type": "radio",
             "instructions": "",
@@ -139,9 +189,9 @@
                 "id": ""
             },
             "choices": {
-                "white: Blanco": "white: Blanco",
-                "blue: Azul": "blue: Azul",
-                "transparent: Transparente": "transparent: Transparente"
+                "white": "Blanco",
+                "blue": "Azul",
+                "transparent": "Transparente"
             },
             "default_value": "",
             "return_format": "value",
@@ -149,26 +199,6 @@
             "other_choice": 0,
             "layout": "vertical",
             "save_other_choice": 0
-        },
-        {
-            "key": "field_655ee3ae83ac3",
-            "label": "T",
-            "name": "t",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
         }
     ],
     "location": [
@@ -189,5 +219,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1700717492
+    "modified": 1700748029
 }

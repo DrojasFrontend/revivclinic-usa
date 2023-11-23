@@ -14,5 +14,4 @@
 </head>
 <body <?php body_class(); ?>>
     <header id="masthead" class="site-header" role="banner">
-        Header
     </header>
