@@ -20,13 +20,6 @@
     // Scripts
     wp_enqueue_script('mainJs', JS_BASE . 'main.js', array('jquery'), '1.0.0', true);
 
-    wp_localize_script('mainJs', 'scriptObj',
-      array(
-        'ajaxurl' => ADMIN_AJAX,
-        'nonce' => wp_create_nonce(AJAX_NONCE),
-        // 'url_base' => base_url('/')
-      )
-    );
   }
   add_action('wp_enqueue_scripts', 'enqueue_style_scripts');
 ?>
