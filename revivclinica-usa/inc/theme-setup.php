@@ -1,5 +1,6 @@
 <?php
   function site_setup() {
+    add_theme_support('post-thumbnails');
     // Enable SVG file uploads
     function mytheme_allow_svg_upload($mimes) {
       $mimes['svg'] = 'image/svg+xml';

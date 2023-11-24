@@ -12,6 +12,7 @@ define('AJAX_NONCE', 'ajax-seguridad-5021');
 $incPath = get_template_directory() . '/inc/';
 // require_once($incPath . 'enqueue-style-scripts.php');
 require_once($incPath . 'theme-setup.php');
+require_once($incPath . 'custom-post-type.php');
 
 // Remove the admin bar for non-admin users
 function remove_admin_bar() {
