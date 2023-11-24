@@ -17,6 +17,9 @@ $custom_query = new WP_Query( $args ); ?>
 
 <section class="slick-primary">
   <div class="slick-primary__wrapper">
+    <div class="slick-primary__heading">
+      <h2 class="fz-48">We are happy patients!</h2>
+    </div>
     <div class="slick-primary__container">
       <div id="slick-primary-js">
       <?php if ( $custom_query->have_posts() ) :
