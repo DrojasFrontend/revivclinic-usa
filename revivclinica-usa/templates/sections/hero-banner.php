@@ -41,14 +41,13 @@ $hero_cta_style = isset($args->hero_cta_style) ? $args->hero_cta_style : '';
     <div class="hero__container">
       <h1 class="hero__title h1 pb-40"><?= $hero_title ?></h1>
       <div class="hero__copy fz-28 pb-20"><?= $hero_copy ?></div>
-      <?php 
-        get_template_part('templates/components/buttons', null, [
-          'icon'  => $hero_cta_icon,
-          'text'  => $hero_cta_text,
-          'link'  => $hero_cta_link,
-          'style' => $hero_cta_style,
-        ]);
-      ?>
+        <?php 
+          get_template_part('templates/components/buttons', null, [
+            'text'  => $hero_cta_text,
+            'link'  => $hero_cta_link,
+            'style' => $hero_cta_style,
+          ]);
+        ?>
     </div>
   </div>
 </section>
