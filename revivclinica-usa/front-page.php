@@ -21,10 +21,15 @@ $treatments = (object) [
   'treatments_cta_link' => $fields['treatments_cta_link'],
 ];
 
+$banner = (object) [
+  'group_banner' => $fields['group_banner'],
+];
+
 ?>
 
 <?php get_template_part('templates/sections/hero-banner', null, $hero); ?>
 <?php get_template_part('templates/sections/treatments', null, $treatments); ?>
 <?php get_template_part('templates/sections/slider', null); ?>
+<?php get_template_part('templates/components/banner', null, $banner); ?>
 
 <?php get_footer() ?>

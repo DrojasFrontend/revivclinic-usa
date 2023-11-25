@@ -88,7 +88,7 @@ img {
 }
 
 .fz-40 {
-  font-size: var(--fz-40);
+  font-size: var(--fz-28);
 }
 
 .fz-30 {
@@ -126,6 +126,10 @@ img {
 
   .fz-48 {
     font-size: var(--fz-48);
+  }
+
+  .fz-40 {
+    font-size: var(--fz-40);
   }
 
   .fz-28 {
