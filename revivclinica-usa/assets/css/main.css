@@ -40,6 +40,7 @@
   --fz-16: 16px;
   --fz-11: 11px;
 
+  --pb-100: 100px;
   --pb-50: 50px;
   --pb-40: 40px;
   --pb-30: 30px;
@@ -177,6 +178,10 @@ img {
 }
 
 /* Spacing */
+.pb-100 {
+  padding-bottom: var(--pb-50);
+}
+
 .pb-50 {
   padding-bottom: var(--pb-50);
 }
@@ -202,6 +207,10 @@ img {
 }
 
 @media only screen and (min-width: 1024px) {
+  .pb-100 {
+    padding-bottom: var(--pb-100);
+  }
+
   .pb-40 {
     padding-bottom: var(--pb-40);
   }

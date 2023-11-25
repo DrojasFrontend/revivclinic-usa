@@ -15,7 +15,7 @@ $args = array(
 
 $custom_query = new WP_Query( $args ); ?>
 
-<section class="slick-primary">
+<section class="slick-primary pb-100">
   <div class="slick-primary__wrapper">
     <div class="slick-primary__heading">
       <h2 class="fz-48">We are happy patients!</h2>
@@ -52,5 +52,3 @@ $custom_query = new WP_Query( $args ); ?>
     </div>
   </div>
 </section>
-
-<?php get_footer();

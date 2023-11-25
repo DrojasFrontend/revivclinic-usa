@@ -8,7 +8,7 @@ $group_banner_cta_link = isset($args->group_banner['group_banner_cta_link']) ? $
 
 ?>
 
-<section class="banner">
+<section class="banner pb-100">
   <div class="banner__wrapper" style="background-color: <?= $group_banner_color ?>;background-image: url(<?= $group_banner_bckg ?>);">
     <div class="banner__container">
       <h2 class="fz-40 pb-30"><?= $group_banner_title ?></h2>

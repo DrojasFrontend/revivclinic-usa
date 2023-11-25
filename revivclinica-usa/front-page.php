@@ -25,11 +25,16 @@ $banner = (object) [
   'group_banner' => $fields['group_banner'],
 ];
 
+$textImage = (object) [
+  'group_text_image' => $fields['group_text_image'],
+];
+
 ?>
 
 <?php get_template_part('templates/sections/hero-banner', null, $hero); ?>
 <?php get_template_part('templates/sections/treatments', null, $treatments); ?>
-<?php get_template_part('templates/sections/slider', null); ?>
+<?php get_template_part('templates/components/slider', null); ?>
 <?php get_template_part('templates/components/banner', null, $banner); ?>
+<?php get_template_part('templates/components/block-text-image', null, $textImage); ?>
 
 <?php get_footer() ?>

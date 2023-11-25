@@ -6,12 +6,10 @@
     <title><?php wp_title('|', true, 'right'); ?>Inicio</title>
     <?php wp_head(); ?>
 
-    
-    
     <!-- styles -->
     <?php get_template_part('templates/layouts/head', null); ?>
     
 </head>
 <body <?php body_class(); ?>>
-    <header id="masthead" class="site-header" role="banner">
-    </header>
+    <main>
+        <header id="masthead" class="site-header" role="banner"></header>
