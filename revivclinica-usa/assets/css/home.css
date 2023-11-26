@@ -381,9 +381,13 @@
 }
 
 .text-image__video {
+  display: flex;
+  align-items: center;
   width: 580px;
+  height: 320px;
   border-radius: 20px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .right figure img {
