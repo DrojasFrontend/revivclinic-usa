@@ -33,10 +33,10 @@ $hero_cta_style = isset($args->hero_cta_style) ? $args->hero_cta_style : '';
 <section class="hero">
   <div class="hero__wrapper">
     <figure class="hero__desktop">
-      <img class="hero__img" src="<?= $image_url ?>" width="<?= $image_width ?>" height="<?= $image_height ?>" loading="lazy" alt="Hero Background Image">
+      <img class="hero__img" src="<?= $image_url ?>" width="<?= $image_width ?>" height="<?= $image_height ?>" alt="Hero Background Image">
     </figure>
     <figure class="hero__mobile">
-      <img class="hero__img" src="<?= $image_url_mobile ?>" width="<?= $image_width_mobile ?>" height="<?= $image_height_mobile ?>" loading="lazy" alt="Hero Background Image">
+      <img class="hero__img" src="<?= $image_url_mobile ?>" width="<?= $image_width_mobile ?>" height="<?= $image_height_mobile ?>" alt="Hero Background Image">
     </figure>
     <div class="hero__container">
       <h1 class="hero__title h1 pb-40"><?= $hero_title ?></h1>
