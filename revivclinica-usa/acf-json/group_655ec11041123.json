@@ -768,7 +768,7 @@
                     },
                     "choices": {
                         "yes": "Sombra",
-                        "no": "Sin Sombra"
+                        "no-box-shadow": "Sin Sombra"
                     },
                     "default_value": "",
                     "return_format": "value",
@@ -843,6 +843,176 @@
                     "preview_size": "medium"
                 }
             ]
+        },
+        {
+            "key": "field_656203b985a60",
+            "label": "Bloque de Texto con Imagen",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_65620425a51e0",
+            "label": "Grupo",
+            "name": "group_text_image_2",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_65620425a51e1",
+                    "label": "Estilo",
+                    "name": "group_text_image_style",
+                    "aria-label": "",
+                    "type": "radio",
+                    "instructions": "Este componente combina texto e imagen para mostrar contenido visualmente atractivo.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "default": "Texto - Imagen",
+                        "right": "Imagen - Texto"
+                    },
+                    "default_value": "",
+                    "return_format": "value",
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "layout": "vertical",
+                    "save_other_choice": 0
+                },
+                {
+                    "key": "field_65620425a51e2",
+                    "label": "Sombra",
+                    "name": "group_text_image_shadow",
+                    "aria-label": "",
+                    "type": "radio",
+                    "instructions": "Este componente combina texto e imagen para mostrar contenido visualmente atractivo.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "yes": "Sombra",
+                        "no-box-shadow": "Sin Sombra"
+                    },
+                    "default_value": "",
+                    "return_format": "value",
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "layout": "vertical",
+                    "save_other_choice": 0
+                },
+                {
+                    "key": "field_65620425a51e3",
+                    "label": "Titulo",
+                    "name": "group_text_image_title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_65620425a51e4",
+                    "label": "Descripción",
+                    "name": "group_text_image_copy",
+                    "aria-label": "",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                },
+                {
+                    "key": "field_65620425a51e5",
+                    "label": "Imagen",
+                    "name": "group_text_image_img",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "preview_size": "medium"
+                },
+                {
+                    "key": "field_65620425a51e6",
+                    "label": "Codigo Video Embed",
+                    "name": "group_text_image_video",
+                    "aria-label": "",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                }
+            ]
         }
     ],
     "location": [
@@ -863,5 +1033,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1700875283
+    "modified": 1700937585
 }

@@ -27,6 +27,12 @@ $banner = (object) [
 
 $textImage = (object) [
   'group_text_image' => $fields['group_text_image'],
+  'instance_id' => 1,
+];
+
+$textImage2 = (object) [
+  'group_text_image_2' => $fields['group_text_image_2'],
+  'instance_id' => 2,
 ];
 
 ?>
@@ -36,5 +42,6 @@ $textImage = (object) [
 <?php get_template_part('templates/components/slider', null); ?>
 <?php get_template_part('templates/components/banner', null, $banner); ?>
 <?php get_template_part('templates/components/block-text-image', null, $textImage); ?>
+<?php get_template_part('templates/components/block-text-image', null, $textImage2); ?>
 
 <?php get_footer() ?>
