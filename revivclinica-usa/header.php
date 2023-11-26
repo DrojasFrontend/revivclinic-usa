@@ -10,6 +10,6 @@
     <?php get_template_part('templates/layouts/head', null); ?>
     
 </head>
-<body <?php body_class(); ?>>
+<body>
     <main>
         <header id="masthead" class="site-header" role="banner"></header>
