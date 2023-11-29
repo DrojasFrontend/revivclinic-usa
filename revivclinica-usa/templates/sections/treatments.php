@@ -9,10 +9,23 @@ if (is_array($treatment_image_1) && !empty($treatment_image_1['url'])) {
   $treatment_image_url = $treatment_image_1['url'];
   $treatment_image_width = $treatment_image_1['width'];
   $treatment_image_height = $treatment_image_1['height'];
+
+  $image_sizes = array(
+    '(max-width: 600px) 100vw',
+    '(max-width: 1200px) 50vw',
+    'calc(33.3333% - 20px)' // adjust this value based on your layout
+  );
+
+  $srcset = wp_get_attachment_image_srcset($treatment_image_1['id'], 'full');
+  $sizes = implode(', ', $image_sizes);
+
+
 } else {
   $treatment_image_url = '';
   $treatment_image_width = '';
   $treatment_image_height = '';
+  $srcset = '';
+  $sizes = '';
 }
 
 $treatments_name_1 = isset($args->group_treatments['treatments_name_1']) ? $args->group_treatments['treatments_name_1'] : '';
@@ -38,7 +51,13 @@ $treatments_cta_link_3 = isset($args->group_treatments['treatments_cta_link_3'])
       <div class="treatments__grid">
         <div class="treatments__item">
           <figure class="treatments__img">
-            <img class="" src="<?= $treatment_image_url ?>" width="<?= $treatment_image_width ?>" height="<?= $treatment_image_height ?>" alt="<?= $treatments_name_1 ?>">
+            <img class="" 
+              src="<?= $treatment_image_url ?>" 
+              width="<?= $treatment_image_width ?>" 
+              height="<?= $treatment_image_height ?>" 
+              alt="<?= $treatments_name_1 ?>"
+              srcset="<?= esc_attr($srcset) ?>"
+              sizes="<?= esc_attr($sizes) ?>">
           </figure>
           <a class="treatments__item-link fz-30" href="<?= $treatments_cta_link_1['url'] ?>" aria-label="<?= $treatments_name_1 ?>" target="_blank">
             <?= $treatments_name_1 ?>
@@ -48,8 +67,14 @@ $treatments_cta_link_3 = isset($args->group_treatments['treatments_cta_link_3'])
           </p>
         </div>
         <div class="treatments__item">
-          <figure class="treatments__img">
-            <img class="" src="<?= $treatment_image_url ?>" width="<?= $treatment_image_width ?>" height="<?= $treatment_image_height ?>" alt="<?= $treatments_name_2 ?>">
+        <figure class="treatments__img">
+            <img class="" 
+              src="<?= $treatment_image_url ?>" 
+              width="<?= $treatment_image_width ?>" 
+              height="<?= $treatment_image_height ?>" 
+              alt="<?= $treatments_name_1 ?>"
+              srcset="<?= esc_attr($srcset) ?>"
+              sizes="<?= esc_attr($sizes) ?>">
           </figure>
           <a class="treatments__item-link fz-30" href="<?= $treatments_cta_link_2['url'] ?>" aria-label="<?= $treatments_name_2 ?>" target="_blank">
             <?= $treatments_name_2 ?>
@@ -60,7 +85,13 @@ $treatments_cta_link_3 = isset($args->group_treatments['treatments_cta_link_3'])
         </div>
         <div class="treatments__item">
           <figure class="treatments__img">
-            <img class="" src="<?= $treatment_image_url ?>" width="<?= $treatment_image_width ?>" height="<?= $treatment_image_height ?>" alt="<?= $treatments_name_3 ?>">
+            <img class="" 
+              src="<?= $treatment_image_url ?>" 
+              width="<?= $treatment_image_width ?>" 
+              height="<?= $treatment_image_height ?>" 
+              alt="<?= $treatments_name_1 ?>"
+              srcset="<?= esc_attr($srcset) ?>"
+              sizes="<?= esc_attr($sizes) ?>">
           </figure>
           <a class="treatments__item-link fz-30" href="<?= $treatments_cta_link_3['url'] ?>" aria-label="<?= $treatments_name_3 ?>" target="_blank">
             <?= $treatments_name_3 ?>
